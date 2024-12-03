@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School 35</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<style>
+    .content-table{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        align-items: center;
+        border-collapse: collapse;
+        border: #333 solid;
+        margin: 5% auto;
+    }
+    .content-table tr{ 
+        color: #333; 
+        text-align: left;
+    
+        border-bottom: 1px #ddd solid;
+    }
+    .content-table th,
+    .content-table td {
+        padding: 1em 2em;
+    }
+    .content-table td:nth-of-type(odd){
+        font-weight: 700;
+    }
+    .content-table tr:nth-of-type(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+    }
+
+@media (max-width: 768px) {
+    .content-table td,
+    .content-table th {
+        font-size: 14px; /* Slightly smaller font size */
+    }
+}
+
+</style>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav class="navigation">
+            <h2 id = "main-logo" >
+                <a href="index.html">
+                    Samarkand School #35
+                </a>
+            </h2>
+            <ul class="nav-links">
+                <li>
+                    <a href="our-staff.html">Our Staff</a>
+                </li>
+                <li>
+                    <a href="contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="school-newsletter.html">School Newsletter</a>
+                </li>
+                <li>
+                    <a href="school-curriculum.html">School Curriculum</a>
+                </li>
+                <li>
+                    <a href="faqs.html">FAQs</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="title-style">
+            School Curriculum
+       </h2>
+        <table class="content-table">
+            <tbody >
+                <tr>
+                    <td>Languages</td>
+                    <td>Russian Language,  uzbek Language, English Language, Literature</td>
+                </tr>
+                <tr>
+                    <td>Mathematics</td>
+                    <td>Basic Mathematics,  Algebra, Geometry</td>
+                </tr>
+                <tr>
+                    <td>Natural Sciences</td>
+                    <td>Physics, Chemistry, Biology, Geography</td>
+                </tr>
+                <tr>
+                    <td>Social Sciences</td>
+                    <td>The World History, The History of uzbekistan, Social Studies.</td>
+                </tr>
+                <tr>
+                    <td>Technology</td>
+                    <td>Information Technology (IT), Applied Technology</td>
+                </tr>
+                <tr>
+                    <td>Arts</td>
+                    <td>Visual Arts, Music</td>
+                </tr>
+                <tr>
+                    <td>Physical Education</td>
+                    <td>Team Sports, Health Education</td>
+                </tr>
+                <tr>
+                    <td>Ethics and Culture</td>
+                    <td>The history of religions, Moral Education</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="footer-info" >
+        <p>
+            Address: Samarkand, Mahmud al-Kashgari Street, 5
+            <br>140100
+            <br>+998 66 233 07 26
+        </p>
+        <p id = "license">
+            © 2024 "SAMARKAND STATE SCHOOL 35" NTM. All Rights Reserved.
+        </p>
+        <ul class="footer-links">
+            <li>
+                <a href="our-staff.html">Our Staff</a>
+            </li>
+            <li>
+                <a href="school-newsletter.html">School Newsletter</a>
+            </li>
+            <li>
+                <a href="contact-us.html">Contact Us</a>
+            </li>
+            <li>
+                <a href="faqs.html">FAQs</a>
+            </li>
+            <li>
+                <a href="school-curriculum.html">School Curriculum</a>
+            </li>
+        </ul>
+</footer>
+</body>
+
+</html>

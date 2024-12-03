@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School 35</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+        <!-- Navigation -->
+        <nav class="navigation">
+            <h2 id = "main-logo" >
+                <a href="index.html">
+                    Samarkand School #35
+                </a>
+            </h2>
+            <ul class="nav-links">
+                <li>
+                    <a href="our-staff.html">Our Staff</a>
+                </li>
+                <li>
+                    <a href="contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="school-newsletter.html">School Newsletter</a>
+                </li>
+                <li>
+                    <a href="school-curriculum.html">School Curriculum</a>
+                </li>
+                <li>
+                    <a href="faqs.html">FAQs</a>
+                </li>
+            </ul>
+        </nav>
+</header>
+
+<main>
+    <h2 class="title-style">
+        Newsletter
+    </h2>
+
+    <section class="news-box-container">
+        <div class="news-box">
+            <img src="Images/news-image-1.jpeg" alt="" class="news-img">
+            <div class="news-text">
+                <h4>
+                    The guys were brought together by English
+                </h4>
+
+                <p>
+                    Eleventh-graders Akhadzhon and Parviz have not yet finished school,
+                    but are already actively mastering the basics of their future profession. One teaches adult
+                    students English, the other works in a foreign logistics company.
+                    
+                    Read more: Lorem ipsum dolor sit.            
+                </p>
+            </div>
+        </div>
+        <div class="news-box">
+            <img src= "Images/news-image-2.jpeg" alt="" class="news-img">
+            <div class="news-text">
+                <h4>
+                    A new uniform has been fully approved for schoolchildren in the new academic year
+                </h4>
+
+                <p>
+                    Dear parents!
+                    The administration of school 35 informs you that from the 2022-23 academic year, a single school uniform will be introduced throughout the Republic, which can be purchased centrally in special stores that have permission to sell the new model uniform.
+                    <!-- For students of our school, you, dear parents, will be able to purchase a uniform in stores that will be open near the Dynamo stadium by the end of July. They will sell the uniform that we will require specifically in our educational institution. Therefore, 
+                    do not rush to purchase a uniform in other places! Exact information about the opening of these stores will be communicated in the school information channels -->
+                </p>
+            </div>
+        </div>
+        <div class="news-box">
+            <img src = "Images/news-image-3.jpg" alt="" class="news-img">
+            <div class="news-text">
+                <h4>
+                    Congratulations to graduates of comprehensive school
+                </h4>
+
+                <p>
+                    May 25 is an exciting day for school graduates, when the last bell rings. In connection with this date, all schools in the country organize events to ceremonially send off graduates. 
+                On this day, the last bell rang for graduates of comprehensive school No. 35 in Samarkand. The event was also attended by employees of the Samarkand State Medical University, headed by the Vice-Rector for Spiritual and Educational Issues and Work with Youth Eldor Tangirov. 
+                <!-- Representatives of the university read out to the graduates a festive congratulation from the President of the Republic of Uzbekistan Shavkat Mirziyoyev, and also conveyed warm words from the rector of Samarakand State Medical University. 
+                In a solemn atmosphere, 7 graduates who graduated from school with honors and a gold medal were presented with certificates of honor and memorable gifts. Representatives of the university wished all graduates good luck in their further studies and new victories in life. -->
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer-info" >
+    <p>
+        Address: Samarkand, Mahmud al-Kashgari Street, 5
+        <br>140100
+        <br>+998 66 233 07 26
+    </p>
+    <p id = "license">
+        © 2024 "SAMARKAND STATE SCHOOL 35" NTM. All Rights Reserved.
+    </p>
+    <ul class="footer-links">
+        <li>
+            <a href="our-staff.html">Our Staff</a>
+        </li>
+        <li>
+            <a href="school-newsletter.html">School Newsletter</a>
+        </li>
+        <li>
+            <a href="contact-us.html">Contact Us</a>
+        </li>
+        <li>
+            <a href="faqs.html">FAQs</a>
+        </li>
+        <li>
+            <a href="school-curriculum.html">School Curriculum</a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+<style>
+.news-box-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 5% auto;
+    border: #333 solid;
+    min-height: 40rem;
+}
+.news-box{
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
+    border: #333 solid;
+    width: 30%;
+}
+.news-img{
+    border: #333 solid;
+    width: 100%;
+    aspect-ratio: 4/3; 
+    object-fit: cover;
+}
+
+.news-text{
+    border: #333 solid;
+    margin-top: 5%;
+    padding: 5%;
+    line-height: 1.8rem;
+}
+
+.news-text h4{
+    color: #76C170;
+    font-weight: 700;
+    border: #333 solid;
+    margin-bottom: 5%;
+}
+@media (max-width: 768px) {
+.news-box-container{
+    flex-direction: column;
+    width: 60%;
+}
+.news-box{
+    width: 100%;
+    margin-bottom: 5%;
+}
+}
+</style>
+
+
+
+</html>

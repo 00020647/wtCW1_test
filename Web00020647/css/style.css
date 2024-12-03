@@ -1,0 +1,154 @@
+/* Reseting the styles */
+body, p {
+    font-size: 20px;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+html {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}   
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+/* Standirtizied Styles */
+.title-style{
+    margin-top: 5%;
+    color: #76C170;
+    font-weight: 700;
+    border: #333 solid;
+    text-align: center;
+}
+
+::placeholder {
+    color: #a3a3a3;
+}
+
+@media (max-width: 768px) {
+    #main-logo {
+        font-size: 20px; /* Smaller logo size for tablets */
+        margin-right: 5%;
+    }
+    .nav-links li {
+        font-size: 14px; /* Smaller link text */
+    }
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 14px; /* Slightly smaller text */
+    }
+
+    h2, h3, h4 {
+        font-size: 16px; /* Adjust link size */
+    }
+}
+
+
+
+/* Navigation */
+.navigation{
+    border: #333 solid 1px;
+    display: flex;
+    height: 120px;
+    align-items: center;
+    
+}
+
+.nav-links{
+    border: #333 solid 1px;
+    display: flex;
+    margin-right: 100px;
+    margin-left: auto;
+    gap: 2rem;
+    font-weight: 700;
+    color: #85A98F;
+}
+
+#main-logo{
+    font-weight: 700;
+    color: #76C170;
+    border: #333 solid 1px;
+    margin-left: 5%;
+}
+/* End of Navigation structure */
+
+
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 85%;
+    height: auto;
+    margin: 5% auto;
+    border: 10px solid;
+    gap: 4rem;
+}
+
+
+
+/* Footer */
+.footer-info {
+    display: flex;
+    align-items: flex-start;
+    background-color: #333; 
+    color: #fff;
+    height: auto; 
+    margin-top: 5rem;
+    padding: 2rem 4rem;
+    border: #fff solid;
+}
+
+.footer-info p {
+    display: flex;
+    color: #fff;
+    font-weight: 100;
+    border: #f41414 solid;
+    line-height: 40px;
+	text-align: justify;
+    font-size: 14px;
+}
+
+#license {
+    font-weight: 300;
+    font-size: 14px;
+    align-self: flex-end; 
+    border: #fff solid;
+}
+
+.footer-links {
+    margin-left: 15%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+    gap: 1.5rem; 
+    border: #fff solid;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-info {
+        font-size: 8px; /* Slightly smaller text */
+    }
+
+    .footer-links li {
+        font-size: 10px; /* Adjust link size */
+    }
+}
+/* End of Footer */
+
+

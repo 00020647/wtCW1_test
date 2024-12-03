@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School 35</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<style>
+
+#arrow-img{
+    width: 2em;
+    rotate: 90deg;
+}
+.faq-container{
+    min-height: auto;
+    width: 80%;
+    margin: 3% auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #333 solid;
+}
+
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 4px solid #85A98F;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question h4{
+    color: #333;
+    font-weight: 700;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.4;
+}
+
+.faq.active .answer{
+    max-height: 300px;
+}
+
+.faq.active #arrow-img{
+    transform: rotate(180deg);
+}
+
+</style>
+
+<body>
+
+<header>
+        <!-- Navigation -->
+        <nav class="navigation">
+            <h2 id = "main-logo" >
+                <a href="index.html">
+                    Samarkand School #35
+                </a>
+            </h2>
+            <ul class="nav-links">
+                <li>
+                    <a href="our-staff.html">Our Staff</a>
+                </li>
+                <li>
+                    <a href="contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="school-newsletter.html">School Newsletter</a>
+                </li>
+                <li>
+                    <a href="school-curriculum.html">School Curriculum</a>
+                </li>
+                <li>
+                    <a href="faqs.html">FAQs</a>
+                </li>
+            </ul>
+        </nav>
+</header>
+<main>
+    <h2 class="title-style">
+        Frequently Asked Questions
+    </h2>
+
+    <section class="faq-container">
+        <div class="faq">
+            <div class="question">
+                <h4>At what age can a child attend the school?</h4>
+
+                <img src="Images/arrow.png" alt="" id="arrow-img">
+            </div>
+
+            <div class="answer">
+                <p>
+                    Samarkant State School #35 pupils are accepted in accordance with the Law on Education, 
+                    children are admitted to school in the year they turn 7 years old.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h4>What is the primary language of education?</h4>
+
+                <img src="Images/arrow.png" alt="" id="arrow-img">
+            </div>
+
+            <div class="answer">
+                <p>
+                    The primary language of all classes at the school is Russian. 
+                    All subjects are exclusively taught in Russian.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h4>What facilities does the school provide?</h4>
+
+                <img src="Images/arrow.png" alt="" id="arrow-img">
+            </div>
+
+            <div class="answer">
+                <p>
+                    The school provides essential facilities, including well-equipped classrooms, 
+                    a library, and access to basic educational resources to support pupils' learning.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer-info" >
+    <p>
+        Address: Samarkand, Mahmud al-Kashgari Street, 5
+        <br>140100
+        <br>+998 66 233 07 26
+    </p>
+    <p id = "license">
+        © 2024 "SAMARKAND STATE SCHOOL 35" NTM. All Rights Reserved.
+    </p>
+    <ul class="footer-links">
+        <li>
+            <a href="our-staff.html">Our Staff</a>
+        </li>
+        <li>
+            <a href="school-newsletter.html">School Newsletter</a>
+        </li>
+        <li>
+            <a href="contact-us.html">Contact Us</a>
+        </li>
+        <li>
+            <a href="faqs.html">FAQs</a>
+        </li>
+        <li>
+            <a href="school-curriculum.html">School Curriculum</a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+
+<script>
+
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    })
+}
+);
+</script>
+
+</html>
